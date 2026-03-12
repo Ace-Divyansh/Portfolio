@@ -1,12 +1,14 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { Navbar } from "@/components/navbar"
 import Image from "next/image"
 import { useRef } from "react"
 import { ArrowLeft, ArrowUpRight, Gamepad2, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import MetallicPaint from "@/components/MetallicPaint"
+
+const MetallicPaint = dynamic(() => import("@/components/MetallicPaint"), { ssr: false })
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

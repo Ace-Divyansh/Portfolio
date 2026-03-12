@@ -1,9 +1,11 @@
 "use client"
 
+import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import LogoLoop from "@/components/LogoLoop"
 import ShinyText from "@/components/ShinyText"
-import ModelViewer from "@/components/ModelViewer"
+
+const ModelViewer = dynamic(() => import("@/components/ModelViewer"), { ssr: false })
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
