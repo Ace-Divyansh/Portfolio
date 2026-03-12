@@ -86,12 +86,12 @@ export function HeroSection() {
           >
             <ModelViewer
               url="/models/gameBoy12.glb"
-              width={520}
-              height={550}
+              width={1040}
+              height={1100}
               defaultRotationX={-120}
               defaultRotationY={-15}
-              defaultZoom={2.45}
-              minZoomDistance={2.3}
+              defaultZoom={1.3}
+              minZoomDistance={2.4}
               maxZoomDistance={2.6}
               enableMouseParallax={true}
               enableManualRotation={true}
