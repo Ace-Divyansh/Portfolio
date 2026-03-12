@@ -1,0 +1,154 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F5F0E8;
+  --foreground: #1A1A1A;
+  --card: #FAF7F2;
+  --card-foreground: #1A1A1A;
+  --popover: #FAF7F2;
+  --popover-foreground: #1A1A1A;
+  --primary: #D4570A;
+  --primary-foreground: #FAF7F2;
+  --secondary: #EDE8DE;
+  --secondary-foreground: #1A1A1A;
+  --muted: #E8E2D6;
+  --muted-foreground: #6B6560;
+  --accent: #C0392B;
+  --accent-foreground: #FAF7F2;
+  --destructive: #C0392B;
+  --destructive-foreground: #FAF7F2;
+  --border: #D6CFC3;
+  --input: #D6CFC3;
+  --ring: #D4570A;
+  --chart-1: #D4570A;
+  --chart-2: #C0392B;
+  --chart-3: #1A1A1A;
+  --chart-4: #6B6560;
+  --chart-5: #E8E2D6;
+  --radius: 0.625rem;
+  --sidebar: #FAF7F2;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #D4570A;
+  --sidebar-primary-foreground: #FAF7F2;
+  --sidebar-accent: #EDE8DE;
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: #D6CFC3;
+  --sidebar-ring: #D4570A;
+}
+
+.dark {
+  --background: #F5F0E8;
+  --foreground: #1A1A1A;
+  --card: #FAF7F2;
+  --card-foreground: #1A1A1A;
+  --popover: #FAF7F2;
+  --popover-foreground: #1A1A1A;
+  --primary: #D4570A;
+  --primary-foreground: #FAF7F2;
+  --secondary: #EDE8DE;
+  --secondary-foreground: #1A1A1A;
+  --muted: #E8E2D6;
+  --muted-foreground: #6B6560;
+  --accent: #C0392B;
+  --accent-foreground: #FAF7F2;
+  --destructive: #C0392B;
+  --destructive-foreground: #FAF7F2;
+  --border: #D6CFC3;
+  --input: #D6CFC3;
+  --ring: #D4570A;
+  --chart-1: #D4570A;
+  --chart-2: #C0392B;
+  --chart-3: #1A1A1A;
+  --chart-4: #6B6560;
+  --chart-5: #E8E2D6;
+  --sidebar: #FAF7F2;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #D4570A;
+  --sidebar-primary-foreground: #FAF7F2;
+  --sidebar-accent: #EDE8DE;
+  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-border: #D6CFC3;
+  --sidebar-ring: #D4570A;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-display: 'Tektur', 'Geist', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}

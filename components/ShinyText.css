@@ -1,0 +1,29 @@
+.shiny-text {
+  position: relative;
+  display: inline-block;
+  color: var(--text-color, #ff7700);
+  background-image: linear-gradient(
+    110deg,
+    var(--text-color, #ff7700) 0%,
+    var(--text-color, #ff7700) 42%,
+    var(--shine-color, #f9de58) 50%,
+    var(--text-color, #ff7700) 58%,
+    var(--text-color, #ff7700) 100%
+  );
+  background-size: 420% 100%;
+  background-position: 260% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shiny-text-sweep var(--shine-duration, 7s) linear infinite;
+}
+
+@keyframes shiny-text-sweep {
+  0% {
+    background-position: 260% 50%;
+  }
+
+  100% {
+    background-position: -260% 50%;
+  }
+}
