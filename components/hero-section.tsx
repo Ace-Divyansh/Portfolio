@@ -90,9 +90,9 @@ export function HeroSection() {
               height={550}
               defaultRotationX={-120}
               defaultRotationY={-15}
-              defaultZoom={2.6}
-              minZoomDistance={4.9}
-              maxZoomDistance={5.2}
+              defaultZoom={2.45}
+              minZoomDistance={2.3}
+              maxZoomDistance={2.6}
               enableMouseParallax={true}
               enableManualRotation={true}
               enableHoverRotation={true}
