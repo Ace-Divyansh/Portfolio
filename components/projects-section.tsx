@@ -77,7 +77,7 @@ export function ProjectsSection() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               custom={3}
-              className="mt-10 flex"
+              className="mt-10 flex relative z-10"
             >
               <Magnet padding={80} magnetStrength={3}>
                 <Button
