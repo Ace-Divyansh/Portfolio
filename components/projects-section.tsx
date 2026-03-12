@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
@@ -118,32 +119,41 @@ export function ProjectsSection() {
               easing="elastic"
             >
               <Card
-                customClass="overflow-hidden border-white/20"
-                style={{
-                  backgroundImage: 'url("/posters/the chaos awaits you.png")',
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                customClass="overflow-hidden border-white/20 relative"
                 aria-label="Kaos Balls poster"
-              />
+              >
+                <Image
+                  src="/posters/the chaos awaits you.png"
+                  alt="Kaos Balls poster"
+                  fill
+                  sizes="420px"
+                  className="object-cover object-center"
+                />
+              </Card>
               <Card
-                customClass="overflow-hidden border-white/20"
-                style={{
-                  backgroundImage: 'url("/posters/your sword calls for destruction.png")',
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                customClass="overflow-hidden border-white/20 relative"
                 aria-label="Knight's Reckoning poster"
-              />
+              >
+                <Image
+                  src="/posters/your sword calls for destruction.png"
+                  alt="Knight's Reckoning poster"
+                  fill
+                  sizes="420px"
+                  className="object-cover object-center"
+                />
+              </Card>
               <Card
-                customClass="overflow-hidden border-white/20"
-                style={{
-                  backgroundImage: 'url("/posters/fight the plight (2).png")',
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                customClass="overflow-hidden border-white/20 relative"
                 aria-label="Cyber Carnage poster"
-              />
+              >
+                <Image
+                  src="/posters/fight the plight (2).png"
+                  alt="Cyber Carnage poster"
+                  fill
+                  sizes="420px"
+                  className="object-cover object-center"
+                />
+              </Card>
             </CardSwap>
           </motion.div>
         </div>

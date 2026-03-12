@@ -48,9 +48,10 @@ export function AboutSection() {
           alt="Divyansh Porwal"
           width={520}
           height={780}
+          sizes="(max-width: 768px) 300px, 40vw"
           className="w-full object-cover object-top"
           style={{ display: "block" }}
-          priority
+          loading="lazy"
         />
       </motion.div>
 

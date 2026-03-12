@@ -132,7 +132,7 @@ function ProjectSection({
                 muted
                 loop
                 playsInline
-                preload="metadata"
+                preload="none"
               >
                 <source src={clipSrc} type="video/mp4" />
               </video>
