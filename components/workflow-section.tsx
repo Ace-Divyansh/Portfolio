@@ -157,7 +157,7 @@ export function WorkflowSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         custom={8}
-        className="absolute inset-x-0 bottom-0 w-full overflow-hidden border-y border-white/20 bg-white/5 py-4"
+        className="absolute inset-x-0 bottom-0 w-full overflow-hidden border-y border-white/20 bg-white/5"
       >
         <LogoLoop
           logos={platformLogos}
@@ -167,7 +167,7 @@ export function WorkflowSection() {
           fadeOutColor="#5b0a0a"
           logoHeight={40}
           ariaLabel="Platforms and tools I use"
-          className="w-full"
+          className="w-full py-4"
         />
       </motion.div>
     </section>

@@ -114,7 +114,7 @@ export function HeroSection() {
         initial="hidden"
         animate="visible"
         custom={3}
-        className="absolute inset-x-0 bottom-0 w-full overflow-hidden border-y border-white/20 bg-white/5 py-3"
+        className="absolute inset-x-0 bottom-0 w-full overflow-hidden border-y border-white/20 bg-white/5"
       >
         <LogoLoop
           logos={heroTextLoopItems}
@@ -124,7 +124,7 @@ export function HeroSection() {
           fadeOutColor="#003087"
           logoHeight={20}
           ariaLabel="Game Developer, Web developer, Art Lover, AI Enthusiast"
-          className="w-full"
+          className="w-full py-3"
         />
       </motion.div>
     </section>
