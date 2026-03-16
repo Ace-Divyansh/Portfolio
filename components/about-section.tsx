@@ -118,7 +118,7 @@ export function AboutSection() {
                   }}
                   asChild
                 >
-                  <a href="/ResumeV1.pdf" download="Divyansh_Porwal_Resume.pdf">
+                  <a href="/Resume_Divyansh_Porwal.pdf" download="Divyansh_Porwal_Resume.pdf">
                     <Download className="size-4" />
                     Download Resume
                   </a>
