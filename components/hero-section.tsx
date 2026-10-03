@@ -82,7 +82,7 @@ export function HeroSection() {
           <motion.div
             animate={{ y: [0, -18, 0] }}
             transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" }}
-            className="flex w-full max-w-lg justify-center"
+            className="flex w-full max-w-lg justify-center lg:translate-x-[50px]"
           >
             <ModelViewer
               url="/models/gameBoy12.glb"
