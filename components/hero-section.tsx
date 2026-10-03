@@ -36,7 +36,7 @@ export function HeroSection() {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-10">
         {/* Left side - Name & Title */}
-        <div className="flex flex-1 translate-y-[100px] flex-col justify-center lg:translate-y-0">
+        <div className="flex flex-1 translate-y-[50px] flex-col justify-center lg:translate-y-0">
           <motion.p
             variants={fadeUp}
             initial="hidden"
