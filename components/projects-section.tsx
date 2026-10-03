@@ -107,7 +107,7 @@ export function ProjectsSection() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             custom={4}
-            className="relative mx-auto h-[380px] w-full max-w-[340px] lg:mx-0 lg:ml-auto lg:h-[460px] lg:max-w-[420px]"
+            className="relative mx-auto mt-8 h-[560px] w-full max-w-[340px] lg:mx-0 lg:ml-auto lg:mt-0 lg:h-[460px] lg:max-w-[420px]"
           >
             <CardSwap
               width={730}

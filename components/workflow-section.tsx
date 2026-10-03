@@ -88,10 +88,10 @@ export function WorkflowSection() {
   return (
     <section
       id="workflow"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pb-32 pt-24 sm:pb-36 lg:pb-40 lg:pt-32"
+      className="relative flex min-h-screen items-center overflow-hidden pb-36 pt-24 lg:pb-40 lg:pt-32"
       style={{ backgroundColor: "#a21414" }}
     >
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto w-full max-w-7xl px-6 lg:px-10">
         <div className="md:ml-auto md:max-w-5xl md:text-right">
           <motion.p
             variants={fadeUp}
@@ -131,11 +131,11 @@ export function WorkflowSection() {
                 className="h-full"
               >
                 <SpotlightCard
-                  className="h-full rounded-xl border border-white/65 bg-white/10 p-5 backdrop-blur-lg sm:p-8"
+                  className="h-full rounded-xl border border-white/65 bg-white/10 p-8 backdrop-blur-lg"
                   spotlightColor="rgb(255, 93, 198)"
                 >
                   <div className="flex items-center gap-3 md:justify-end">
-                    <h3 className="text-lg font-semibold text-white sm:text-xl">{step.title}</h3>
+                    <h3 className="text-xl font-semibold text-white">{step.title}</h3>
                     <div className="flex size-10 items-center justify-center rounded-lg border border-white/45 bg-white/10">
                       <Icon className="size-5 text-white/90" />
                     </div>
