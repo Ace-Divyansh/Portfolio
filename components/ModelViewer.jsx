@@ -391,8 +391,9 @@ const ModelViewer = ({
   return (
     <div
       style={{
-        width,
-        height,
+        width: `min(${width}px, 100%)`,
+        height: `min(${height}px, calc(100vw * ${height / width}))`,
+        margin: '0 auto',
         touchAction: 'pan-y pinch-zoom',
         position: 'relative'
       }}

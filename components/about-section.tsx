@@ -40,7 +40,7 @@ export function AboutSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         custom={0}
-        className="pointer-events-none absolute bottom-0 left-17 select-none"
+        className="pointer-events-none absolute bottom-0 left-1/2 z-0 w-[min(300px,78vw)] -translate-x-1/2 select-none opacity-30 md:left-17 md:w-[clamp(300px,40vw,550px)] md:translate-x-0 md:opacity-100"
         style={{ width: "clamp(300px, 40vw, 550px)" }}
       >
         <Image
@@ -55,7 +55,7 @@ export function AboutSection() {
         />
       </motion.div>
 
-      <div className="relative mx-auto w-full max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 sm:px-6 lg:px-10 lg:py-32">
         <div className="flex justify-end">
           {/* Text — right side, pushed away from the standing figure */}
           <div className="w-full max-w-xl md:text-right">
@@ -76,7 +76,7 @@ export function AboutSection() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               custom={2}
-              className="mt-4 font-display text-4xl font-black tracking-tight text-balance sm:text-5xl lg:text-6xl"
+              className="mt-4 font-display text-[clamp(2.2rem,10vw,3rem)] font-black tracking-tight text-balance sm:text-5xl lg:text-6xl"
               style={{ color: "#0c2340" }}
             >
               Crafting Worlds, One Game at a Time
