@@ -4,7 +4,7 @@ import dynamic from "next/dynamic"
 import { Navbar } from "@/components/navbar"
 import Image from "next/image"
 import { useRef } from "react"
-import { ArrowLeft, ArrowUpRight, Gamepad2, Wrench } from "lucide-react"
+import { ArrowLeft, ArrowUpRight, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 
@@ -243,7 +243,7 @@ export default function ProjectsPage() {
         />
 
         <div className="relative mx-auto w-full max-w-7xl px-6 py-32 lg:px-10 lg:py-40">
-          <div className="grid items-center gap-14 lg:grid-cols-[1fr_420px]">
+          <div className="grid items-center gap-16 lg:grid-cols-[1fr_420px] lg:gap-20">
             <div>
               <motion.div
                 variants={fadeUp}
@@ -335,22 +335,6 @@ export default function ProjectsPage() {
                 </div>
               </motion.div>
 
-              {/* Scroll indicator */}
-              <motion.div
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                custom={5}
-                className="mt-20 flex items-center gap-3"
-              >
-                <Gamepad2 className="size-4" style={{ color: "rgba(255,255,255,0.3)" }} />
-                <span
-                  className="text-xs font-medium tracking-widest uppercase"
-                  style={{ color: "rgba(255,255,255,0.25)" }}
-                >
-                  Scroll to explore
-                </span>
-              </motion.div>
             </div>
 
             <motion.div
@@ -358,7 +342,7 @@ export default function ProjectsPage() {
               initial="hidden"
               animate="visible"
               custom={6}
-              className="mx-auto h-32 w-full max-w-sm -translate-y-[100px] sm:h-40 md:h-48 lg:h-56"
+              className="mx-auto mt-8 flex h-32 w-full max-w-sm items-center justify-center sm:h-40 md:h-48 lg:mt-0 lg:h-56 lg:justify-end"
               aria-hidden="true"
             >
               <MetallicPaint
@@ -397,41 +381,9 @@ export default function ProjectsPage() {
         clipSrc="/game-clips/KaosBalls.mp4"
       />
 
-      {/* ── Project 02 ── Violet-Blue ── Left aligned ── */}
+      {/* ── Project 02 ── Dark Purple ── Left aligned ── */}
       <ProjectSection
         index={2}
-        bgColor="#3B2D8E"
-        textColor="#FFFFFF"
-        subtitleColor="rgba(255,255,255,0.65)"
-        mutedColor="rgba(255,255,255,0.4)"
-        accentColor="#C4B5FD"
-        align="left"
-        title="Knight's Reckoning"
-        description="Grab a friend and defend a mystical medieval realm. This action-packed local multiplayer tests your strategic co-op skills against relentless waves of magical alien enemies."
-        link="https://diwision.itch.io/knights-reckoning"
-        posterSrc="/posters/KnightsReckoning.png"
-        clipSrc="/game-clips/KnightsReckoning.mp4"
-      />
-
-      {/* ── Project 03 ── Light Blue ── Right aligned ── */}
-      <ProjectSection
-        index={3}
-        bgColor="#1E3A5F"
-        textColor="#FFFFFF"
-        subtitleColor="rgba(255,255,255,0.65)"
-        mutedColor="rgba(255,255,255,0.4)"
-        accentColor="#7DD3FC"
-        align="right"
-        title="Cyber Carnage"
-        description="My debut high-intensity action game, originally developed as a collaborative Game Jam project. It challenges players to use swift evasion mechanics and heavy melee action to defeat extra terrestrial enemies."
-        link="https://diwision.itch.io/cyber-carnage"
-        posterSrc="/posters/CyberCarnage.png"
-        clipSrc="/game-clips/CyberCarnage.mp4"
-      />
-
-      {/* ── Project 04 ── Dark Purple ── Left aligned ── */}
-      <ProjectSection
-        index={4}
         bgColor="#24103F"
         textColor="#FFFFFF"
         subtitleColor="rgba(255,255,255,0.65)"
@@ -443,6 +395,38 @@ export default function ProjectsPage() {
         link="https://sober-pixels-studio.itch.io/drdriftpunk"
         posterSrc="/posters/DrDriftPunk.png"
         clipSrc=""
+      />
+
+      {/* ── Project 03 ── Violet-Blue ── Left aligned ── */}
+      <ProjectSection
+        index={3}
+        bgColor="#3B2D8E"
+        textColor="#FFFFFF"
+        subtitleColor="rgba(255,255,255,0.65)"
+        mutedColor="rgba(255,255,255,0.4)"
+        accentColor="#C4B5FD"
+        align="right"
+        title="Knight's Reckoning"
+        description="Grab a friend and defend a mystical medieval realm. This action-packed local multiplayer tests your strategic co-op skills against relentless waves of magical alien enemies."
+        link="https://diwision.itch.io/knights-reckoning"
+        posterSrc="/posters/KnightsReckoning.png"
+        clipSrc="/game-clips/KnightsReckoning.mp4"
+      />
+
+      {/* ── Project 04 ── Light Blue ── Right aligned ── */}
+      <ProjectSection
+        index={4}
+        bgColor="#1E3A5F"
+        textColor="#FFFFFF"
+        subtitleColor="rgba(255,255,255,0.65)"
+        mutedColor="rgba(255,255,255,0.4)"
+        accentColor="#7DD3FC"
+        align="left"
+        title="Cyber Carnage"
+        description="My debut high-intensity action game, originally developed as a collaborative Game Jam project. It challenges players to use swift evasion mechanics and heavy melee action to defeat extra terrestrial enemies."
+        link="https://diwision.itch.io/cyber-carnage"
+        posterSrc="/posters/CyberCarnage.png"
+        clipSrc="/game-clips/CyberCarnage.mp4"
       />
     </div>
   )
