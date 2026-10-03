@@ -31,12 +31,12 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pb-20 pt-20 sm:pt-16"
+      className="relative flex min-h-screen items-center pb-20 pt-16"
       style={{ backgroundColor: "#003087" }}
     >
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-6 px-4 sm:gap-12 sm:px-6 lg:flex-row lg:gap-16 lg:px-10">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-10">
         {/* Left side - Name & Title */}
-        <div className="flex w-full min-w-0 flex-col justify-center lg:flex-1">
+        <div className="flex flex-1 flex-col justify-center">
           <motion.p
             variants={fadeUp}
             initial="hidden"
@@ -51,7 +51,7 @@ export function HeroSection() {
             initial="hidden"
             animate="visible"
             custom={1}
-            className="mt-5 font-display text-[clamp(3.25rem,15vw,4.5rem)] font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl xl:text-[9rem]"
+            className="mt-5 font-display text-6xl font-black leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl xl:text-[9rem]"
           >
             <ShinyText text="DIVYANSH" shineColor="#f9de58" textColor="#ff7700" speed={8} />
             <br />
@@ -82,7 +82,7 @@ export function HeroSection() {
           <motion.div
             animate={{ y: [0, -18, 0] }}
             transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" }}
-            className="w-full max-w-lg"
+            className="flex w-full max-w-lg justify-center"
           >
             <ModelViewer
               url="/models/gameBoy12.glb"
