@@ -32,7 +32,7 @@ export function HeroSection() {
     <section
       id="home"
       className="relative flex min-h-screen items-center pb-20 pt-16"
-      style={{ backgroundColor: "#003087" }}
+      style={{ backgroundColor: "#24103f" }}
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-10">
         {/* Left side - Name & Title */}
@@ -121,7 +121,7 @@ export function HeroSection() {
           speed={82}
           gap={26}
           fadeOut
-          fadeOutColor="#003087"
+          fadeOutColor="#24103f"
           logoHeight={20}
           ariaLabel="Game Developer, Web developer, Art Lover, AI Enthusiast"
           className="w-full py-3"
