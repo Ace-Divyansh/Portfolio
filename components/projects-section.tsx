@@ -154,6 +154,18 @@ export function ProjectsSection() {
                   className="object-cover object-center"
                 />
               </Card>
+              <Card
+                customClass="overflow-hidden border-white/20 relative"
+                aria-label="Dr Drift Punk poster"
+              >
+                <Image
+                  src="/posters/DrDriftPunk.png"
+                  alt="Dr Drift Punk poster"
+                  fill
+                  sizes="420px"
+                  className="object-cover object-center"
+                />
+              </Card>
             </CardSwap>
           </motion.div>
         </div>

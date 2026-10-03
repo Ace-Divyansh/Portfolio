@@ -428,6 +428,22 @@ export default function ProjectsPage() {
         posterSrc="/posters/CyberCarnage.png"
         clipSrc="/game-clips/CyberCarnage.mp4"
       />
+
+      {/* ── Project 04 ── Dark Purple ── Left aligned ── */}
+      <ProjectSection
+        index={4}
+        bgColor="#24103F"
+        textColor="#FFFFFF"
+        subtitleColor="rgba(255,255,255,0.65)"
+        mutedColor="rgba(255,255,255,0.4)"
+        accentColor="#F9DE58"
+        align="left"
+        title="Dr Drift Punk"
+        description="Our first ever game as a studio, Drift and dodge the traffic in a neon soaked Cyberpunk environment in this fast paced driving game!"
+        link="https://sober-pixels-studio.itch.io/drdriftpunk"
+        posterSrc="/posters/DrDriftPunk.png"
+        clipSrc=""
+      />
     </div>
   )
 }
