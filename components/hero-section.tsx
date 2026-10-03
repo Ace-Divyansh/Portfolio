@@ -36,7 +36,7 @@ export function HeroSection() {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16 lg:px-10">
         {/* Left side - Name & Title */}
-        <div className="flex flex-1 flex-col justify-center">
+        <div className="flex flex-1 translate-y-[100px] flex-col justify-center lg:translate-y-0">
           <motion.p
             variants={fadeUp}
             initial="hidden"
@@ -82,7 +82,7 @@ export function HeroSection() {
           <motion.div
             animate={{ y: [0, -18, 0] }}
             transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" }}
-            className="flex w-full max-w-lg justify-center lg:translate-x-[50px]"
+            className="flex w-full max-w-lg -translate-y-[50px] justify-center lg:translate-x-[50px] lg:translate-y-0"
           >
             <ModelViewer
               url="/models/gameBoy12.glb"
