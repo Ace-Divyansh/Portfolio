@@ -115,7 +115,7 @@ export function AboutSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         custom={0}
-        className="relative mx-auto mt-4 w-[min(300px,78vw)] shrink-0 select-none md:pointer-events-none md:absolute md:bottom-0 md:left-17 md:mt-0 md:w-[clamp(300px,40vw,550px)]"
+        className="relative mx-auto mt-4 w-[min(300px,78vw)] shrink-0 -translate-y-[100px] select-none md:pointer-events-none md:absolute md:bottom-0 md:left-17 md:mt-0 md:w-[clamp(300px,40vw,550px)] md:translate-y-0"
       >
         <Image
           src="/my-image.png"

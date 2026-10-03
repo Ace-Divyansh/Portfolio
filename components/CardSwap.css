@@ -25,6 +25,7 @@
 
 @media (max-width: 768px) {
   .card-swap-container {
+    bottom: 100px;
     right: auto;
     left: 50%;
     transform: translateX(-50%) scale(0.68);
